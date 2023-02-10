@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: circle;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Завдання 1 */
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 420px;
+    top: 180px;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 480px;
+    top: 250px;
+    z-index: 2;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    left: 450px;
+    top: 320px; 
+}
+/* Завдання 2 */
+
+.box {
+    background-color: gray;
+    padding-bottom: 500px;
+    padding-right: px;
+    position: fixed;
+    left: -180px;
+    padding-left: 80px;
+}
+
+.menu {
+    align-items: center;
+}
+
+
+
+@keyframes menu{
+    0% {transform: translateX(50px);}
+    100% {transform: translateX(150px);}
+
+}
+
+.box:hover {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: none;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.menu-text {
+    color: white;
+    font-size: 24px;
+    transform: rotate(270deg);
+    position: relative;
+    left: 50px;
+    top: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.list {
+    position: relative;
+    right: 30px;
+}
+
+.item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: medium;
+    margin-bottom: 10px;
+    color: orange;
+}
